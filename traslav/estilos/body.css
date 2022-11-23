@@ -1,0 +1,48 @@
+body{
+    font-size: 33px;
+    font-weight: bold;
+    text-align: justify;
+    color: black;
+}
+
+#flexCenter {
+    display: flex;
+    width: 100%;
+}
+
+p{
+   text-decoration: underline overline line-through;
+   text-shadow: 0.01em 0.091em 0.1em black;
+}
+
+#hp{
+  border: thick solid blue;
+  border-width: 5px;
+  box-shadow: 10px 10px black;
+}
+
+#divP{
+  margin-top: -10px;
+  color: black; 
+  border: thick solid;
+  border-width: 5px;
+  width: 610px;
+  height: 150px;
+}
+
+.A{
+  width: 50%;
+  padding: 20px;
+}
+
+.B{
+  margin-top: -0.1px;
+  margin-right: 100%;
+  padding: 20px;
+  border: 5px dashed red;
+  box-shadow: 12px 12px 6px black;
+  height: 95px;
+}
+
+
+

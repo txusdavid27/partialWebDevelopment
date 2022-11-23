@@ -1,0 +1,43 @@
+
+    <div id="divP">
+        <div id="flexCenter">
+          <div class="A">
+            <form action="#">
+              <select name="ja" [(ngModel)]="select_1" size="4" (change)="selectChangeHandler($event)" multiple>   <!--ctrl o shift-->
+                <option *ngFor="let dato of datos">
+                  {{dato}}
+                </option>
+              </select>
+              <!--<input type="submit" value="Enviar" />-->
+            </form>
+          </div>
+          <div class="B" >
+            <button (click)="agregar()" > Agregar </button>
+            <br>
+            <button (click)="remover()"> Remover </button>
+          </div>
+          <div class="C" >
+            <form action="#">
+              <select name="jb" [(ngModel)]="select_2" size="4" multiple>   <!--ctrl o shift-->
+                <option *ngFor="let dato of datos_">
+                  {{dato}}
+                </option>
+              </select>
+              <!--<input type="submit" value="Enviar" />-->
+            </form>
+          </div>
+
+
+        </div>
+    </div>
+
+<!--
+
+  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" (change)="changeTypeVehicle($event)">
+          <option value="">Tipo Vehiculo</option>
+          <option [value]="typevehicle.typevehicle" *ngFor="let typevehicle of typeVehicles">{{typevehicle.typevehicle}}</option>
+        </select>
+
+-->
+
+<router-outlet></router-outlet>

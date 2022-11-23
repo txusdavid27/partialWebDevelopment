@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Jesús Fuentes">
+    <meta name="keywords" content="aprendiz,programación">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Parcial</title>
+    <link rel="stylesheet" href="estilos/body.css">
+  </head>
+  <body id="inicio">
+    <div id="divP">  
+        <div id="flexCenter">
+          <div class="A">
+            <form action="#">
+              <select id="izquierda" size="4" multiple>   <!--ctrl o shift-->
+                <option value="pollo">Pollo</option>
+                <option value="carne">Carne</option>
+                <option value="tomate">Tomate</option>
+                <option value="lechuga">Lechuga</option>
+              </select>
+              <!--<input type="submit" value="Enviar" />-->
+            </form>
+          </div>
+          <div class="B" >
+            <button onclick="agregar()"> Agregar </button>
+            <br>
+            <button onclick="remover()"> Remover </button>
+          </div>
+          <div class="C" >
+            <form action="#">
+              <select id="derecha" size="4" multiple>
+                <option value="pan">Pan</option>
+              </select>
+              <!--<input type="submit" value="Enviar" />-->
+            </form>
+          </div>
+
+
+        </div>
+    </div>    
+  </body>
+  <script src="javascript/code.js"></script>
+</html>
+
+<!--
+
+  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" (change)="changeTypeVehicle($event)">
+          <option value="">Tipo Vehiculo</option>
+          <option [value]="typevehicle.typevehicle" *ngFor="let typevehicle of typeVehicles">{{typevehicle.typevehicle}}</option>
+        </select>
+
+-->
