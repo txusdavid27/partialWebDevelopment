@@ -1,0 +1,11 @@
+<div style="font-family: Arial, Helvetica, sans-serif;">
+  <h5>Foto seleccionada</h5>
+</div>
+<img id="principal" src={{selurl}} />
+<div style="font-family: Arial, Helvetica, sans-serif;">
+  <h5>Seleccione una Foto</h5>
+</div>
+<tr *ngFor="let e of fotos" id="thumbnailUrl">
+  <img src={{e.thumbnailUrl}} (click)= onClick(e) >
+</tr>
+<router-outlet></router-outlet>
